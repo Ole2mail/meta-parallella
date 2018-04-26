@@ -1,4 +1,5 @@
 require recipes-bsp/u-boot/u-boot.inc
+require recipes-bsp/u-boot/u-boot-common_2018.01.inc
 
 DEPENDS += "dtc-native"
 
