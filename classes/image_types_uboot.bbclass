@@ -1,9 +1,5 @@
 inherit image_types kernel-arch
 
-oe_mkimage[depends] += "\
-			bc-native:do_populate_sysroot \
-			"
-
 oe_mkimage () {
     mkimage -A ${UBOOT_ARCH} -O linux -T ramdisk -C $2 -n ${IMAGE_NAME} \
         -d ${DEPLOY_DIR_IMAGE}/$1 ${DEPLOY_DIR_IMAGE}/$1.u-boot

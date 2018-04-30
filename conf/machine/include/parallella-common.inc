@@ -30,3 +30,5 @@ EXTRA_IMAGEDEPENDS += "virtual/bootloader"
 IMAGE_FSTYPES ?= "tar.gz cpio.gz.u-boot"
 IMAGE_CLASSES += "image_types_uboot"
 
+# u-boot build dependency 
+HOSTTOOLS_NONFATAL += "bc"
